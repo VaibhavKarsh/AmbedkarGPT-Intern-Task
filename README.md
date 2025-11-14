@@ -30,14 +30,14 @@ Ask your question :
 Your Question: What does Ambedkar say about the shastras?
 ```
 
-Type `quit` to exit.
+Type `exit` to close.
 
 ## How It Works
 
 1. It firsts loads `speech.txt`
 2. Then it splits the loaded documents into chunks using RecursiveCharacterTextSplitter
-3. Then these embeddings are converted into vector embeddings using "embeddinggemma:latest" and stored in the vector database
-4. It uses gemma3:4b to generate answers as it is a relatively smaller and efficient model.
+3. Then these document chunks are converted into vector embeddings using "embeddinggemma:latest" and stored in the vector database
+4. The system uses "gemma3:4b" to generate answers as it is a relatively smaller and efficient model.
 
 
 ## Files
